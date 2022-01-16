@@ -1,0 +1,29 @@
+/* Post grid */
+section.posts {
+    @include mq('tablet') {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--gap);
+    }
+}
+
+.card {
+    border: 1px solid var(--gray-light);
+    padding: 1rem;
+    margin-bottom: 4rem;
+
+    &__heading {
+        margin-top: 0;
+    }
+    &__text {
+        margin-top: 1rem;
+    }
+    &__read-more {
+        display: inline-block;
+        padding: 0.5rem 0.75rem;
+        background-color: var(--color1);
+        color: var(--white);
+        text-decoration: none;
+        border-radius: var(--border-radius);   
+    }
+}

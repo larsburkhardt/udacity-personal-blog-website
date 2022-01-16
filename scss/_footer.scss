@@ -1,0 +1,15 @@
+.sitefooter {
+    background-color: var(--black);
+    &__container {
+        text-align: center;
+    }
+
+    &__heading,
+    &__text {
+        color: var(--white);
+    }
+
+    .copyright {
+        color: var(--white);
+    }
+}

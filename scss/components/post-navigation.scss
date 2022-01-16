@@ -1,0 +1,52 @@
+/* Post Navigation */
+.post-nav {
+    margin: 2rem 0;
+    padding: 0 1.5rem;
+    @include mq('tablet-small') {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__heading {
+        text-align: center;
+        width: 100%;
+    }
+    &__content {
+        flex: 1 1 50%;
+        max-width: 480px;
+        border: 1px solid var(--gray-light);
+        position: relative;
+    }
+    &__older::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 1.5rem;
+        background-color: var(--black);
+        top:0;
+        left: -1.5rem;  
+        clip-path: polygon(0 50%, 100% 0, 100% 100%);    
+    }
+    &__newer::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 1.5rem;
+        background-color: var(--black); 
+        top:0;
+        right: -1.5rem; 
+        clip-path: polygon(100% 50%, 0 0, 0 100%);    
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--black);
+
+    }
+    &__text {
+        flex: 1;
+        padding: 1rem;
+        margin: 0;
+    }
+}

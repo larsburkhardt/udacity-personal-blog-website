@@ -1,0 +1,23 @@
+// Media Queries
+// Source: https://gist.github.com/gpessia/0e1a81c3b75e47ee148e929f0cd7f03c
+
+$breakpoints: (
+    "phone":        480px,       
+    "phablet":      560px,       
+    "tablet-small": 640px,       
+    "tablet":       768px,       
+    "tablet-wide":  1120px,       
+    "desktop":      1248px,       
+    "desktop-wide": 1440px        
+);
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}

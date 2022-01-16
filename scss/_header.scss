@@ -1,0 +1,51 @@
+.siteheader {
+    background-color: var(--black);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+
+    &__container {
+        @include mq('tablet') {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+#logo-area {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    @include mq('tablet') {
+        text-align: left;
+    }
+
+    a {
+        color: var(--white);
+        text-decoration: none;
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+}
+
+.site-navigation {
+    &__menu {
+        display: flex;
+        flex-flow: row wrap;
+        list-style: none;
+        justify-content: center;
+    }
+    &__list-item {
+        padding: .5rem 1rem;
+    }
+    &__link {
+        display: block;
+        color: var(--white);
+        text-decoration: none;
+        padding: .25rem 0;
+        border-bottom: 4px solid transparent;
+        transition: .25s ease;
+        &:hover,
+        &.active {
+            border-bottom: 4px solid var(--color1);
+        }
+    }
+}

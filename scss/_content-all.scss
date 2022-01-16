@@ -1,0 +1,24 @@
+.main {
+    background-color: var(--gray-lightest);
+    padding-top: 3rem;
+
+    &__container {
+        @include mq('tablet-wide') {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: var(--gap);
+        }
+    }
+}
+
+// Blog Post Images
+
+figure {
+    border: 1px solid var(--gray-light);
+    padding: .75rem;
+    background-color: var(--white);
+    margin: 2rem 0;
+}
+figcaption {
+    font-style: italic;
+}

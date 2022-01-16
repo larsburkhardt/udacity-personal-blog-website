@@ -1,0 +1,40 @@
+@charset "UTF-8";
+.blockquote-wrap {
+    padding: 1rem;
+    background-color: var(--gray-light);
+}
+
+blockquote {
+    font-family: monospace;
+    font-size: clamp(.875rem, 0.2vw + 0.8rem, 1rem);
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+blockquote::before, blockquote::after {
+    font-family: "PT Sans", sans-serif;
+    position: absolute;
+    color: var(--gray);
+    font-size: 7rem;
+    width: 4rem;
+    height: 4rem;
+}
+blockquote::before {
+    content: "“";
+    top: -2.5rem;
+    left: -3rem;
+}
+blockquote::after {
+    content: "”";
+    right: -4rem;
+    bottom: 1.5rem;
+}
+blockquote cite {
+    display: block;
+}
+blockquote cite::before {
+    content: "–";
+    margin-right: 0.5rem;
+}
+
+/*# sourceMappingURL=blockquote.css.map */

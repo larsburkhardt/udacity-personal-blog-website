@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal Blog Page by Lars Burkhardt, Media Designer based in Bremen, Germany">
+    <title>Personal Blog Page – Home</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="siteheader row" role="siteheader">
+        <div class="container siteheader__container">
+            <p id="logo-area">
+                <a href="#">Lars Burkhardt</a>
+            </p>
+            <nav class="site-navigation" role="navigation">
+                <ul class="site-navigation__menu">
+                    <li class="site-navigation__list-item">
+                        <a class="site-navigation__link active" href="#">Home</a>
+                    </li>
+                    <li class="site-navigation__list-item">
+                        <a class="site-navigation__link" href="blog-page.html">Blog Page</a>
+                    </li>
+                    <li class="site-navigation__list-item">
+                        <a class="site-navigation__link" href="#">Link 3</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main row" role="main">
+        <div class="container main__container">
+            <article class="main__article">
+                <h1 class="intro-heading">Hey, I'm Lars, <br>Media designer based in Bremen, Germany</h1>
+                
+                <section class="posts">
+                    <div class="card">
+                        <h2 class="card__heading">Kittens on fire</h2>
+                        <img src="images/the-lucky-neko-uePn9YCTCY0-unsplash.jpg" alt="Picture of kittens preview" class="card_image">
+                        <p class="card__text">Please let me outside pouty face yay! wait, it's cold out please let me […]</p>
+                        <a href="blog-page.html" class="card__read-more" role="button">Read more</a>
+                    </div>
+                    <div class="card">
+                        <h2 class="card__heading">Dummy post</h2>
+                        <img src="https://picsum.photos/800/635" alt="A sample image" class="card_image">
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit […]</p>
+                        <a href="blog-page.html" class="card__read-more" role="button">Read more</a>
+                    </div>
+                    <div class="card">
+                        <h2 class="card__heading">Dummy post</h2>
+                        <img src="https://picsum.photos/800/635" alt="A sample image" class="card_image">
+                        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit […]</p>
+                        <a href="blog-page.html" class="card__read-more" role="button">Read more</a>
+                    </div>
+                </section>
+            </article>
+            <aside class="sidebar" role="complementary">
+                <div class="sidebar__content">
+                    <h3 class="sidebar__heading">Joke of the day</h3>
+                    <p>What is red and bad for your teeth? <br><em>A brick.</em></p>
+                </div>
+                <div class="sidebar__content">
+                    <h3 class="sidebar__heading">Quote of the day</h3>
+                    <div class="blockquote-wrap">
+                        <blockquote>
+                            All grown-ups were once children... but only few of them remember it.
+                            <cite>Antoine de Saint-Exupéry</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="sitefooter row">
+        <div class="container sitefooter__container">
+            <h3 class="sitefooter__heading">Subscribe to my newsletter!</h3>
+            <p class="sitefooter__text">Keep in track with my latest posts. No spam.</p>
+            <form action="" class="newsletter-form">
+                <div class="input-wrap">
+                    <label for="name">Your name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="input-wrap">
+                    <label for="email">Your E-Mail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="input-wrap">
+                    <input type="submit" value="Let's go!">
+                </div>
+            </form>
+
+            <p class="copyright">&copy;2022 Lars Burkhardt</p>
+        </div>
+    </footer>
+</body>
+</html>

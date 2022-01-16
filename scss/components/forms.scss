@@ -1,0 +1,47 @@
+.newsletter-form {
+    margin-bottom: 2rem;
+
+    @include mq('tablet-small') {
+        display: flex;
+        justify-content: center;
+    }
+    .input-wrap {
+        display: grid;
+        align-items: end;
+    }
+
+    input {
+        padding: 0.75rem 1rem;
+        border-radius: var(--border-radius);
+        border: 1px solid var(--gray-light);
+        font-family: "PT Sans", sans-serif;
+        margin-bottom: 1rem;
+    }
+    label {
+        display: block;
+        color: var(--white);
+        text-align: left;
+    }
+    
+    input[type="text"],
+    input[type="email"] {
+        min-width: 300px;
+        margin-right: 1rem;
+        width: 100%;
+        @include mq('tablet-small') {
+            width: auto;
+        }
+    }
+
+    input[type="submit"] {
+        background-color: var(--color1);
+        color: var(--white);
+        border-color: var(--color1);
+        transition: all .25s ease;
+        font-weight: 700;
+        cursor: pointer;
+        &:hover {
+            background-color: var(--color1-light);
+        }
+    }
+}
