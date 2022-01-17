@@ -7,7 +7,7 @@ For the Media Queries I used a mixin, the source: <https://gist.github.com/gpess
 For the naming of class selectors I tried to follow the BEM Syntax.
 
 ## File structure
-📦udacity-personal-blog-website 
+📦udacity-personal-blog-website   
  ┣ 📂css  
  ┃ ┣ 📜styles.css  
  ┃ ┗ 📜styles.css.map  
