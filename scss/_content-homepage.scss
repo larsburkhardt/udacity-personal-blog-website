@@ -1,5 +1,6 @@
 /* Post grid */
 section.posts {
+    margin-bottom: 4rem;
     @include mq('tablet') {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -10,13 +11,13 @@ section.posts {
 .card {
     border: 1px solid var(--gray-light);
     padding: 1rem;
-    margin-bottom: 4rem;
 
     &__heading {
         margin-top: 0;
     }
     &__text {
         margin-top: 1rem;
+        min-height: 72px;
     }
     &__read-more {
         display: inline-block;
@@ -24,6 +25,9 @@ section.posts {
         background-color: var(--color1);
         color: var(--white);
         text-decoration: none;
-        border-radius: var(--border-radius);   
+        border-radius: var(--border-radius); 
+        &:hover {
+            color: var(--white);
+        }  
     }
 }

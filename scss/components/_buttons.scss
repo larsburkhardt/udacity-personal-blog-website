@@ -1,0 +1,14 @@
+button, 
+.btn {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--color1);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: var(--border-radius); 
+    &:hover {
+        background-color: var(--color1-light);
+        color: var(--white);
+    }  
+
+}
