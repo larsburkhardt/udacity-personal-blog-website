@@ -1,0 +1,14 @@
+.sitefooter {
+    background-color: var(--black);
+}
+.sitefooter__container {
+    text-align: center;
+}
+.sitefooter__heading, .sitefooter__text {
+    color: var(--white);
+}
+.sitefooter .copyright {
+    color: var(--white);
+}
+
+/*# sourceMappingURL=footer-styles.css.map */

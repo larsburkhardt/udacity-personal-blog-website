@@ -1,0 +1,15 @@
+:root {
+    --color1: #468227;
+    --color1-light: #6daa4f;
+    --color2: #492d7f;
+    --black: #171717;
+    --white: #fff;
+    --gray-lightest: #fafafa;
+    --gray-light: #eaeaea;
+    --gray: #777;
+    --gray-dark: #333 ;
+    --gap: 2rem;
+    --border-radius: 4px;
+}
+
+/*# sourceMappingURL=base.css.map */

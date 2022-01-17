@@ -1,0 +1,139 @@
+/* pt-serif-700 - latin */
+@font-face {
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: 700;
+    src: local(""), url("../fonts/pt-serif-v12-latin-700.woff2") format("woff2"), url("../fonts/pt-serif-v12-latin-700.woff") format("woff");
+}
+/* pt-serif-700italic - latin */
+@font-face {
+    font-family: "PT Serif";
+    font-style: italic;
+    font-weight: 700;
+    src: local(""), url("../fonts/pt-serif-v12-latin-700italic.woff2") format("woff2"), url("../fonts/pt-serif-v12-latin-700italic.woff") format("woff");
+}
+/* pt-sans-regular - latin */
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url("../fonts/pt-sans-v12-latin-regular.woff2") format("woff2"), url("../fonts/pt-sans-v12-latin-regular.woff") format("woff");
+}
+/* pt-sans-italic - latin */
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: local(""), url("../fonts/pt-sans-v12-latin-italic.woff2") format("woff2"), url("../fonts/pt-sans-v12-latin-italic.woff") format("woff");
+}
+/* pt-sans-700 - latin */
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local(""), url("../fonts/pt-sans-v12-latin-700.woff2") format("woff2"), url("../fonts/pt-sans-v12-latin-700.woff") format("woff");
+}
+/* pt-sans-700italic - latin */
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: local(""), url("../fonts/pt-sans-v12-latin-700italic.woff2") format("woff2"), url("../fonts/pt-sans-v12-latin-700italic.woff") format("woff");
+}
+html {
+    font-family: "PT Sans", sans-serif;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    color: var(--color1);
+}
+
+h1, .h1 {
+    font-size: clamp(2rem, 1.5vw + 1.7rem, 2.75rem);
+    margin: 1rem 0 2rem 0;
+    color: var(--color1);
+}
+
+h2, .h2 {
+    font-size: clamp(1.5rem, 1vw + 1.3rem, 2rem);
+    margin: 0.75rem 0 1.25rem 0;
+    color: var(--color1);
+}
+
+h3, .h3 {
+    font-size: clamp(1.25rem, 1vw + 1.1rem, 1.75rem);
+    margin: 0.5rem 0 1rem 0;
+    color: var(--color1);
+}
+
+h4, .h4 {
+    font-size: clamp(1rem, 0.5vw + 0.9rem, 1.25rem);
+    margin: 0.5rem 0 0.75rem 0;
+    color: var(--color1);
+}
+
+h5, .h5 {
+    font-size: clamp(.875rem, 0.2vw + 0.8rem, 1rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+}
+
+p {
+    color: var(--black);
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 2rem;
+}
+
+a {
+    color: var(--color1);
+    transition: 0.25s ease;
+    text-decoration: none;
+}
+a:hover, a:active {
+    color: var(--color1-light);
+}
+
+b,
+strong {
+    font-weight: 700;
+    color: var(--black);
+    text-decoration: none;
+}
+
+i,
+em {
+    font-weight: normal;
+    font-style: italic;
+    color: currentColor;
+}
+
+q {
+    font-family: monospace;
+    font-weight: normal;
+    font-style: normal;
+}
+
+u {
+    text-decoration: underline;
+    font-weight: normal;
+    color: currentColor;
+}
+
+pre,
+code {
+    font-family: monospace;
+    font-size: 1.15rem;
+    font-weight: normal;
+}
+
+/*# sourceMappingURL=typography-styles.css.map */

@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+::selection,
+-moz-::selection {
+    background: yellow;
+}
+
+.row {
+    padding: 1rem;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*# sourceMappingURL=helpers.css.map */

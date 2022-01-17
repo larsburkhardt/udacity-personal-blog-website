@@ -1,0 +1,113 @@
+.main {
+    background-color: var(--gray-lightest);
+    padding-top: 3rem;
+}
+@media (min-width: 1120px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: var(--gap);
+    }
+}
+
+figure {
+    border: 1px solid var(--gray-light);
+    padding: 0.75rem;
+    background-color: var(--white);
+    margin: 2rem 0;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+/* Post grid */
+section.posts {
+    margin-bottom: 4rem;
+}
+@media (min-width: 768px) {
+    section.posts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--gap);
+    }
+}
+
+.card {
+    border: 1px solid var(--gray-light);
+    padding: 1rem;
+}
+.card__heading {
+    margin-top: 0;
+}
+.card__text {
+    margin-top: 1rem;
+    min-height: 72px;
+}
+.card__read-more {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--color1);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+}
+.card__read-more:hover {
+    color: var(--white);
+}
+
+h1.article-heading {
+    margin-bottom: 0.25rem;
+}
+
+p.article-info {
+    font-size: clamp(.75rem, 0.2vw + 0.7rem, .875rem);
+}
+
+/* Author Info */
+.about {
+    margin-top: 4rem;
+    padding: 1rem;
+    background-color: var(--gray-light);
+    text-align: center;
+}
+.about__author-img {
+    border-radius: 50%;
+    max-width: 160px;
+}
+.about__author-name {
+    text-align: center;
+}
+.about__social {
+    margin-top: 2rem;
+}
+.about__social-link:not(:last-child) {
+    margin-right: 0.5rem;
+    text-decoration: none;
+}
+.about__social-icon {
+    width: 32px;
+    height: 32px;
+}
+
+@media (min-width: 640px) {
+    .about {
+        display: grid;
+        grid: 2rem auto/1fr 4fr;
+        gap: var(--gap);
+        text-align: left;
+    }
+    .about__heading {
+        grid-column: 2;
+        margin: 0;
+    }
+    .about__author-img {
+        grid-column: 1;
+        place-self: center;
+    }
+    .about__author-name {
+        text-align: left;
+    }
+}
+
+/*# sourceMappingURL=content-styles.css.map */
